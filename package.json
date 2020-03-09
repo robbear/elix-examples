@@ -1,0 +1,17 @@
+{
+  "name": "elix-examples",
+  "version": "1.0.0",
+  "description": "Elix examples",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robbear/elix-examples"
+  },
+  "author": "robbear@hyperfine.com",
+  "dependencies": {
+    "elix": "11.0.1"
+  },
+  "engines": {
+    "node": "12.13.1"
+  }
+}
