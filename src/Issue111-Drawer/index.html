@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="module" src="../../node_modules/elix/define/Drawer.js"></script>
+  </head>
+  <body>
+    <elix-drawer id="drawer">
+      <button id="close">Close</button>
+    </elix-drawer>
+    
+    <button id="open">Open</button>
+  </body>
+
+  <script>
+    const close = document.getElementById('close');
+    const open = document.getElementById('open');
+    const drawer = document.getElementById('drawer');
+
+    close.addEventListener('click', ev => {
+      ev.stopPropagation();
+      drawer.close();
+    });
+
+    open.addEventListener('click', ev => {
+      drawer.open();
+    });
+
+    window.addEventListener('load', ev => {
+      // Uncomment to have drawer open at window load:
+      //drawer.open();
+    });
+  </script>
+</html>
